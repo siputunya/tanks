@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+/src/**/*.tsbuildinfo
+/lib/
+/dist/
+/build/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
