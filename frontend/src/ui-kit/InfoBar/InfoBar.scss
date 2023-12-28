@@ -1,0 +1,44 @@
+@import '../../scss/variables.scss';
+
+$timeAnimation: 2.5s;
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.infobar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 22px;
+  background-color: $accent-red-background-color;
+  padding: 16px 46px;
+
+  &__text {
+    color: $text-color-white;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  & .infobar_colorBg {
+    &_dark {
+      background-color: $accent-background-color;
+    }
+
+    &_red {
+      background-color: $accent-red-background-color;
+    }
+  }
+
+  .blinking-text {
+    animation: blink $timeAnimation linear infinite;
+  }
+}
