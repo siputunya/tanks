@@ -1,8 +1,16 @@
+import { Header, Footer } from '@components'
+import { useChangeTitle } from '@hooks'
+import { InfoBar } from '@ui-kit'
+
 const HomePage = () => {
+  useChangeTitle('Главная')
+
   return (
-    <>
-      <h1>Страница Главная</h1>
-    </>
+    <div>
+      <InfoBar content={'Тут должен быть рекламный текст'} />
+      <Header />
+      <Footer />
+    </div>
   )
 }
 
