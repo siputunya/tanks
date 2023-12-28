@@ -1,0 +1,33 @@
+$size_s: 24px;
+$size_m: 36px;
+$size_l: 48px;
+$size_xl: 64px;
+
+.avatar {
+  width: $size_s;
+  height: $size_s;
+  border-radius: 50%;
+  object-fit: cover;
+
+  &.avatar_size {
+    &_s {
+      width: $size_s;
+      height: $size_s;
+    }
+
+    &_m {
+      width: $size_m;
+      height: $size_m;
+    }
+
+    &_l {
+      width: $size_l;
+      height: $size_l;
+    }
+
+    &_xl {
+      width: $size_xl;
+      height: $size_xl;
+    }
+  }
+}
