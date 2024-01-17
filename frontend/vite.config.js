@@ -14,6 +14,7 @@ export default defineConfig({
       '@routers': '/src/routers/index.js',
       '@styles': '/src/scss/',
       '@ui-kit': '/src/ui-kit/index.js',
+      '@utils': '/src/utils/index.js',
       '@assets': path.resolve(__dirname, './src/assets'),
     },
   },
